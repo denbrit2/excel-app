@@ -1,0 +1,19 @@
+@import 'reset';
+@import 'var';
+
+body {
+    background-color: $bodyBack;
+    color: $textColor;
+    user-select: none;
+    font-family: 'better';
+}
+.page {
+    max-width: 1600px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 100px;
+    background: $pageBack;
+}
+h1 {
+    color: red;
+}
