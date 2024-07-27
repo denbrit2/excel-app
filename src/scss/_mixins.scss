@@ -1,0 +1,14 @@
+@mixin button($color: green) {
+    padding: 5px 10px;
+    color: $color;
+    & span {
+        font-size: 18px;
+    }
+    &:active, &.active {
+        color: $active-color;
+    }
+    &:hover {
+        cursor: pointer;
+        border-color: $hover-borderColor;
+    }
+}
