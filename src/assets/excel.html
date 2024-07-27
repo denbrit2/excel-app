@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="./favicon.ico">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div id="app" class="page">
+        <div class="excel">
+            <div class="excel__header">
+                <input class="input" type="text" value="Новая таблица" title="Введите название таблицы">
+                <div>
+                    <button class="button" title="Удалить таблицу">
+                        <!-- <span class="material-icons">delete</span> -->
+                        <span class="material-symbols-outlined" >delete</span>
+                    </button>
+                    <button class="button"  title="Выйти из приложения">
+                        <span class="material-symbols-outlined">exit_to_app</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="excel__toolbar">
+                <button class="button" title="Выравнить по левому краю">
+                    <span class="material-symbols-outlined" >format_align_left</span>
+                </button>
+                <button class="button" title="Выравнить по центру">
+                    <span class="material-symbols-outlined" >format_align_center</span>
+                </button>
+                <button class="button" title="Выравнить по правому краю">
+                    <span class="material-symbols-outlined" >format_align_right</span>
+                </button>
+                <button class="button" title="Жирный текст">
+                    <span class="material-symbols-outlined" >format_bold</span>
+                </button>
+                <button class="button" title="Наклонный текст">
+                    <span class="material-symbols-outlined" >format_italic</span>
+                </button>
+                <button class="button" title="Подчеркнутый текст">
+                    <span class="material-symbols-outlined">format_underlined</span>
+                </button>
+            </div>
+            <div class="excel__formula">
+                <p class="fx">fx</p>
+                <input class="input" type="text">
+            </div>
+            <div class="excel__table">
+                <!-- первая строка особая - шапка -->
+                <div class="row">
+                    <div class="row-info"></div>
+                    <div class="row-data">
+                        <div class="column">A</div>
+                        <!-- формируются динамически -->
+                        <div class="column">B</div>
+                        <div class="column">C</div>
+                    </div>
+                </div>
+                <!-- количество строк так же формируется динамически -->
+                <div class="row">
+                    <div class="row-info">1</div>
+                    <div class="row-data">
+                        <!-- selected - выделенная ячейка по умолчанию 1 -->
+                        <div class="cell selected" contenteditable="">a1</div>
+                        <!-- количество ячеик формируется динамически -->
+                        <div class="cell" contenteditable="">b1</div>
+                        <div class="cell" contenteditable="">c1</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row-info">2</div>
+                    <div class="row-data">
+                        <!-- selected - выделенная ячейка по умолчанию 1 -->
+                        <div class="cell selected">a1</div>
+                        <!-- количество ячеик формируется динамически -->
+                        <div class="cell">b1</div>
+                        <div class="cell">c1</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
